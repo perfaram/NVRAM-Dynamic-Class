@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BBE43DD1AE21A49008DBD7D /* DynamicNVRAM.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BBE43DC1AE21A49008DBD7D /* DynamicNVRAM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BBE43E31AE21A49008DBD7D /* DynamicNVRAM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBE43D71AE21A49008DBD7D /* DynamicNVRAM.framework */; };
+		0BBE43EA1AE21A49008DBD7D /* DynamicNVRAMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBE43E91AE21A49008DBD7D /* DynamicNVRAMTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BBE43E41AE21A49008DBD7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BBE43CE1AE21A49008DBD7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BBE43D61AE21A49008DBD7D;
+			remoteInfo = DynamicNVRAM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BBE43D71AE21A49008DBD7D /* DynamicNVRAM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicNVRAM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBE43DB1AE21A49008DBD7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BBE43DC1AE21A49008DBD7D /* DynamicNVRAM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicNVRAM.h; sourceTree = "<group>"; };
+		0BBE43E21AE21A49008DBD7D /* DynamicNVRAMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicNVRAMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBE43E81AE21A49008DBD7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BBE43E91AE21A49008DBD7D /* DynamicNVRAMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicNVRAMTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BBE43D31AE21A49008DBD7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBE43DF1AE21A49008DBD7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBE43E31AE21A49008DBD7D /* DynamicNVRAM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BBE43CD1AE21A49008DBD7D = {
+			isa = PBXGroup;
+			children = (
+				0BBE43D91AE21A49008DBD7D /* DynamicNVRAM */,
+				0BBE43E61AE21A49008DBD7D /* DynamicNVRAMTests */,
+				0BBE43D81AE21A49008DBD7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BBE43D81AE21A49008DBD7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BBE43D71AE21A49008DBD7D /* DynamicNVRAM.framework */,
+				0BBE43E21AE21A49008DBD7D /* DynamicNVRAMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BBE43D91AE21A49008DBD7D /* DynamicNVRAM */ = {
+			isa = PBXGroup;
+			children = (
+				0BBE43DC1AE21A49008DBD7D /* DynamicNVRAM.h */,
+				0BBE43DA1AE21A49008DBD7D /* Supporting Files */,
+			);
+			path = DynamicNVRAM;
+			sourceTree = "<group>";
+		};
+		0BBE43DA1AE21A49008DBD7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BBE43DB1AE21A49008DBD7D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BBE43E61AE21A49008DBD7D /* DynamicNVRAMTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BBE43E91AE21A49008DBD7D /* DynamicNVRAMTests.m */,
+				0BBE43E71AE21A49008DBD7D /* Supporting Files */,
+			);
+			path = DynamicNVRAMTests;
+			sourceTree = "<group>";
+		};
+		0BBE43E71AE21A49008DBD7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BBE43E81AE21A49008DBD7D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0BBE43D41AE21A49008DBD7D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBE43DD1AE21A49008DBD7D /* DynamicNVRAM.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0BBE43D61AE21A49008DBD7D /* DynamicNVRAM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BBE43ED1AE21A49008DBD7D /* Build configuration list for PBXNativeTarget "DynamicNVRAM" */;
+			buildPhases = (
+				0BBE43D21AE21A49008DBD7D /* Sources */,
+				0BBE43D31AE21A49008DBD7D /* Frameworks */,
+				0BBE43D41AE21A49008DBD7D /* Headers */,
+				0BBE43D51AE21A49008DBD7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicNVRAM;
+			productName = DynamicNVRAM;
+			productReference = 0BBE43D71AE21A49008DBD7D /* DynamicNVRAM.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0BBE43E11AE21A49008DBD7D /* DynamicNVRAMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BBE43F01AE21A49008DBD7D /* Build configuration list for PBXNativeTarget "DynamicNVRAMTests" */;
+			buildPhases = (
+				0BBE43DE1AE21A49008DBD7D /* Sources */,
+				0BBE43DF1AE21A49008DBD7D /* Frameworks */,
+				0BBE43E01AE21A49008DBD7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BBE43E51AE21A49008DBD7D /* PBXTargetDependency */,
+			);
+			name = DynamicNVRAMTests;
+			productName = DynamicNVRAMTests;
+			productReference = 0BBE43E21AE21A49008DBD7D /* DynamicNVRAMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BBE43CE1AE21A49008DBD7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = faramaz;
+				TargetAttributes = {
+					0BBE43D61AE21A49008DBD7D = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					0BBE43E11AE21A49008DBD7D = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 0BBE43D11AE21A49008DBD7D /* Build configuration list for PBXProject "DynamicNVRAM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0BBE43CD1AE21A49008DBD7D;
+			productRefGroup = 0BBE43D81AE21A49008DBD7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BBE43D61AE21A49008DBD7D /* DynamicNVRAM */,
+				0BBE43E11AE21A49008DBD7D /* DynamicNVRAMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BBE43D51AE21A49008DBD7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBE43E01AE21A49008DBD7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BBE43D21AE21A49008DBD7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBE43DE1AE21A49008DBD7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBE43EA1AE21A49008DBD7D /* DynamicNVRAMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BBE43E51AE21A49008DBD7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BBE43D61AE21A49008DBD7D /* DynamicNVRAM */;
+			targetProxy = 0BBE43E41AE21A49008DBD7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BBE43EB1AE21A49008DBD7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0BBE43EC1AE21A49008DBD7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0BBE43EE1AE21A49008DBD7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DynamicNVRAM/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0BBE43EF1AE21A49008DBD7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DynamicNVRAM/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0BBE43F11AE21A49008DBD7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DynamicNVRAMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0BBE43F21AE21A49008DBD7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DynamicNVRAMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BBE43D11AE21A49008DBD7D /* Build configuration list for PBXProject "DynamicNVRAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBE43EB1AE21A49008DBD7D /* Debug */,
+				0BBE43EC1AE21A49008DBD7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BBE43ED1AE21A49008DBD7D /* Build configuration list for PBXNativeTarget "DynamicNVRAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBE43EE1AE21A49008DBD7D /* Debug */,
+				0BBE43EF1AE21A49008DBD7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0BBE43F01AE21A49008DBD7D /* Build configuration list for PBXNativeTarget "DynamicNVRAMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBE43F11AE21A49008DBD7D /* Debug */,
+				0BBE43F21AE21A49008DBD7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BBE43CE1AE21A49008DBD7D /* Project object */;
+}
