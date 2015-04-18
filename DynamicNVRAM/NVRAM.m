@@ -28,6 +28,10 @@
 
 id newMethod(id self, SEL _cmd)
 {
+	id obj = objc_getAssociatedObject(self, _cmd);
+	NSString* representation = [NSString stringWithUTF8String:[obj bytes]];
+	if (representation!=nil)
+		return representation;
 	return objc_getAssociatedObject(self, _cmd);
 }
 
