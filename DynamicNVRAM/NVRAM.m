@@ -7,6 +7,9 @@
 //
 
 #import "NVRAM.h"
+#import <objc/runtime.h>
+#import <Foundation/Foundation.h>
+#import <IOKit/IOKitLib.h>
 
 @implementation NVRAM
 

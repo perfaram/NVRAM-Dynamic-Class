@@ -12,6 +12,7 @@
 		0BBE43EA1AE21A49008DBD7D /* DynamicNVRAMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBE43E91AE21A49008DBD7D /* DynamicNVRAMTests.m */; };
 		0BBE43F51AE21A6B008DBD7D /* NVRAM.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BBE43F31AE21A6B008DBD7D /* NVRAM.h */; };
 		0BBE43F61AE21A6B008DBD7D /* NVRAM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBE43F41AE21A6B008DBD7D /* NVRAM.m */; };
+		0BBE43F81AE21AEE008DBD7D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBE43F71AE21AEE008DBD7D /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		0BBE43E91AE21A49008DBD7D /* DynamicNVRAMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicNVRAMTests.m; sourceTree = "<group>"; };
 		0BBE43F31AE21A6B008DBD7D /* NVRAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVRAM.h; sourceTree = "<group>"; };
 		0BBE43F41AE21A6B008DBD7D /* NVRAM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVRAM.m; sourceTree = "<group>"; };
+		0BBE43F71AE21AEE008DBD7D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BBE43F81AE21AEE008DBD7D /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +60,7 @@
 		0BBE43CD1AE21A49008DBD7D = {
 			isa = PBXGroup;
 			children = (
+				0BBE43F71AE21AEE008DBD7D /* IOKit.framework */,
 				0BBE43D91AE21A49008DBD7D /* DynamicNVRAM */,
 				0BBE43E61AE21A49008DBD7D /* DynamicNVRAMTests */,
 				0BBE43D81AE21A49008DBD7D /* Products */,
