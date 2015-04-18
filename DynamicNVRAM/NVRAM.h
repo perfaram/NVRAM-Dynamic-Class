@@ -10,8 +10,10 @@
 
 @interface NVRAM : NSObject {
 	NSDictionary* nvram;
+	NSMutableArray* properties;
 }
 
 -(id) init;
+-(NSMutableArray*) methodList;
 -(NSDictionary *) NVRAMDump;
 @end

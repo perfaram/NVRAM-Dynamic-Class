@@ -16,8 +16,10 @@
 	self = [super init];
 	if (self) {
 		nvram = [self NVRAMDump];
+		properties = [NSMutableArray.alloc init];
 		[nvram enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
 			class_addMethod([self class], NSSelectorFromString(key), (IMP)newMethod, "v@:");
+			[properties addObject:key];
 		}];
 	}
 	return self;
@@ -28,7 +30,10 @@ id newMethod(id self, SEL _cmd)
 	Ivar nvramIvar = class_getInstanceVariable([self class], "nvram");
 	id NVRAMIvar = object_getIvar(self, nvramIvar);
 	return [NVRAMIvar objectForKey:NSStringFromSelector(_cmd)];
-	
+}
+
+-(NSMutableArray*) methodList {
+	return properties;
 }
 
 -(NSDictionary *) NVRAMDump {
