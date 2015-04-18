@@ -16,7 +16,7 @@
 	self = [super init];
 	if (self) {
 		BOOL dumpResult = [self NVRAMDump];
-		properties = [NSMutableArray.alloc init];
+		_properties = [NSMutableArray.alloc init];
 		[_nvram enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
 			class_addMethod([self class], NSSelectorFromString(key), (IMP)newMethod, "v@:");
 			[_properties addObject:key];
