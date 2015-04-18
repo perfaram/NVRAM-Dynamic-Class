@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NVRAM : NSObject
-
-@property NSDictionary* nvram;
-@property NSMutableArray* properties;
+@interface NVRAM : NSObject {
+	NSDictionary* nvram;
+	NSMutableArray* properties;
+}
 
 -(id) init;
 -(NSMutableArray*) methodList;

@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
+#import "NVRAM.h"
 
-@interface DynamicNVRAMTests : XCTestCase
+@interface DynamicNVRAMTests : XCTestCase {
+	NVRAM* dynamicNVRAM;
+}
 
 @end
 
@@ -17,6 +20,7 @@
 
 - (void)setUp {
     [super setUp];
+	dynamicNVRAM = [NVRAM.alloc init];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -27,7 +31,10 @@
 
 - (void)testExample {
     // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+    //XCTAssert(YES, @"Pass");
+	[[dynamicNVRAM methodList] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+		NSLog(@"%@", [dynamicNVRAM performSelector:NSSelectorFromString(obj)]);
+	}];
 }
 
 - (void)testPerformanceExample {

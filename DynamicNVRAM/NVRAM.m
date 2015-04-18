@@ -16,10 +16,10 @@
 	self = [super init];
 	if (self) {
 		BOOL dumpResult = [self NVRAMDump];
-		_properties = [NSMutableArray.alloc init];
-		[_nvram enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+		properties = [NSMutableArray.alloc init];
+		[nvram enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
 			class_addMethod([self class], NSSelectorFromString(key), (IMP)newMethod, "v@:");
-			[_properties addObject:key];
+			[properties addObject:key];
 		}];
 	}
 	return self;
@@ -33,7 +33,7 @@ id newMethod(id self, SEL _cmd)
 }
 
 -(NSMutableArray*) methodList {
-	return _properties;
+	return properties;
 }
 
 -(BOOL) NVRAMDump {
@@ -55,7 +55,7 @@ id newMethod(id self, SEL _cmd)
 	if (result != kIOReturnSuccess) {
 		return false;
 	}
-	_nvram = (__bridge NSDictionary *)(dict);
+	self->nvram = (__bridge NSDictionary *)(dict);
 	return true;
 }
 
