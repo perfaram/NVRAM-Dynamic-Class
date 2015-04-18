@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NVRAM : NSObject
+@interface NVRAM : NSObject {
+	NSDictionary* nvram;
+}
 
+-(id) init;
+-(NSDictionary *) NVRAMDump;
 @end
