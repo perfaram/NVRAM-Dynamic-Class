@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NVRAM : NSObject {
-	NSDictionary* nvram;
-	NSMutableArray* properties;
-}
+@interface NVRAM : NSObject
+
+@property NSDictionary* nvram;
+@property NSMutableArray* properties;
 
 -(id) init;
 -(NSMutableArray*) methodList;
--(NSDictionary *) NVRAMDump;
+-(BOOL) NVRAMDump;
 @end

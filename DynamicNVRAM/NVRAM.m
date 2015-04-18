@@ -15,11 +15,11 @@
 -(id) init {
 	self = [super init];
 	if (self) {
-		nvram = [self NVRAMDump];
+		BOOL dumpResult = [self NVRAMDump];
 		properties = [NSMutableArray.alloc init];
-		[nvram enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+		[_nvram enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
 			class_addMethod([self class], NSSelectorFromString(key), (IMP)newMethod, "v@:");
-			[properties addObject:key];
+			[_properties addObject:key];
 		}];
 	}
 	return self;
@@ -33,10 +33,10 @@ id newMethod(id self, SEL _cmd)
 }
 
 -(NSMutableArray*) methodList {
-	return properties;
+	return _properties;
 }
 
--(NSDictionary *) NVRAMDump {
+-(BOOL) NVRAMDump {
 	kern_return_t          		result;
 	CFMutableDictionaryRef 		dict;
 	mach_port_t         		masterPort;
@@ -44,19 +44,19 @@ id newMethod(id self, SEL _cmd)
 	
 	result = IOMasterPort(bootstrap_port, &masterPort);
 	if (result != KERN_SUCCESS) {
-		return [[NSDictionary alloc]initWithObjectsAndKeys:[NSString stringWithFormat:@"Error getting the IOMaster port: %s", mach_error_string(result)], @"error", nil];
+		return false;
 	}
 	gOptionsRef = IORegistryEntryFromPath(masterPort, "IODeviceTree:/options");
 	if (gOptionsRef == 0) {
-		return [[NSDictionary alloc]initWithObjectsAndKeys:@"nvram is not supported on this system", nil];
+		return false;
 	}
 	
 	result = IORegistryEntryCreateCFProperties(gOptionsRef, &dict, 0, 0);
 	if (result != kIOReturnSuccess) {
-		return [[NSDictionary alloc]initWithObjectsAndKeys:[NSString stringWithFormat:@"Error getting the firmware variables: %s", mach_error_string(result)], @"error", nil];
+		return false;
 	}
-	
-	return (__bridge NSDictionary *)(dict);
+	_nvram = (__bridge NSDictionary *)(dict);
+	return true;
 }
 
 @end
