@@ -10,6 +10,8 @@
 		0BBE43DD1AE21A49008DBD7D /* DynamicNVRAM.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BBE43DC1AE21A49008DBD7D /* DynamicNVRAM.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BBE43E31AE21A49008DBD7D /* DynamicNVRAM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBE43D71AE21A49008DBD7D /* DynamicNVRAM.framework */; };
 		0BBE43EA1AE21A49008DBD7D /* DynamicNVRAMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBE43E91AE21A49008DBD7D /* DynamicNVRAMTests.m */; };
+		0BBE43F51AE21A6B008DBD7D /* NVRAM.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BBE43F31AE21A6B008DBD7D /* NVRAM.h */; };
+		0BBE43F61AE21A6B008DBD7D /* NVRAM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBE43F41AE21A6B008DBD7D /* NVRAM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		0BBE43E21AE21A49008DBD7D /* DynamicNVRAMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicNVRAMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BBE43E81AE21A49008DBD7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BBE43E91AE21A49008DBD7D /* DynamicNVRAMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicNVRAMTests.m; sourceTree = "<group>"; };
+		0BBE43F31AE21A6B008DBD7D /* NVRAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVRAM.h; sourceTree = "<group>"; };
+		0BBE43F41AE21A6B008DBD7D /* NVRAM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVRAM.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				0BBE43DC1AE21A49008DBD7D /* DynamicNVRAM.h */,
+				0BBE43F31AE21A6B008DBD7D /* NVRAM.h */,
+				0BBE43F41AE21A6B008DBD7D /* NVRAM.m */,
 				0BBE43DA1AE21A49008DBD7D /* Supporting Files */,
 			);
 			path = DynamicNVRAM;
@@ -110,6 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BBE43DD1AE21A49008DBD7D /* DynamicNVRAM.h in Headers */,
+				0BBE43F51AE21A6B008DBD7D /* NVRAM.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BBE43F61AE21A6B008DBD7D /* NVRAM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +322,7 @@
 		0BBE43EE1AE21A49008DBD7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +340,7 @@
 		0BBE43EF1AE21A49008DBD7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
