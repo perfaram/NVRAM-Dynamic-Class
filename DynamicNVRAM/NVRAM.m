@@ -19,6 +19,7 @@
 		properties = [NSMutableArray.alloc init];
 		[nvram enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
 			class_addMethod([self class], NSSelectorFromString(key), (IMP)newMethod, "v@:");
+			objc_setAssociatedObject(self, NSSelectorFromString(key), obj, OBJC_ASSOCIATION_RETAIN);
 			[properties addObject:key];
 		}];
 	}
@@ -27,9 +28,7 @@
 
 id newMethod(id self, SEL _cmd)
 {
-	Ivar nvramIvar = class_getInstanceVariable([self class], "nvram");
-	id NVRAMIvar = object_getIvar(self, nvramIvar);
-	return [NVRAMIvar objectForKey:NSStringFromSelector(_cmd)];
+	return objc_getAssociatedObject(self, _cmd);
 }
 
 -(NSMutableArray*) methodList {
